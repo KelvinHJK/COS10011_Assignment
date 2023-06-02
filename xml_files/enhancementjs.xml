@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="description" content="Habor Resort"/>
+		<meta name="author" content="Kelvin Ho"/>
+		<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="enhancement.css"/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<title>Habor Resort</title>
+	</head>
+
+	<body>
+		<div class="logo">
+			<a href="index.html"><img src="images/habor_logo.png" alt="Habor Resort Logo"/></a>
+		</div>
+		
+		<div class="menu_bar">
+			<!--Navigation menu-->
+			<nav>
+				<ul class="main_menu"> 
+					<li class="active"><a href="index.html">Habor Resort</a>
+						<div class="sub_menu">
+							<ul>
+								<li><a href="roombooking.html"><i class="fa fa-bed" aria-hidden="true"></i>Room Details</a></li>
+								<li><a href="facilities.html"><i class="fa fa-gamepad" aria-hidden="true"></i>Facilities</a></li>
+								<li><a href="food.html"><i class="fa fa-cutlery" aria-hidden="true"></i>Food &amp; Dining</a></li>
+								<li><a href="services.html"><i class="fa fa-sliders" aria-hidden="true"></i>Services &amp; Convenience</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="enquiry.html">Enquiry</a></li>
+					<li><a href="disclaimer.html">Disclaimer</a></li>
+					<li><a href="aboutme.html">About me</a></li>
+					<li><a href="enhancement.html">Enhancement</a>
+                        <div class="sub_menu">
+							<ul>
+								<li><a href="enhancement.html">CSS Enhancement</a></li>
+								<li><a href="enhancementjs.html">JS Enhancement</a></li>
+							</ul>
+						</div>
+                    </li>
+					
+				</ul>
+			</nav>
+		</div>
+	
+		<header>
+			<h1>JavaScript Enhancements</h1><hr/>
+		</header>
+		
+		<section class="enhancement">
+			<div class="enhance1">
+				<h1>Image Slide Show</h1>
+				<p>
+					The website utilizes JavaScript's index in the use of an image slider. Also, the website used fade effect whenever next image is shown. 
+                    A user can hover each bullet (dots below) to view miniature version of that slide. A simple but effective way to preview upcoming slides.
+				</p><br/>
+				<label>Link: </label>
+				<div class="enhance_link">
+					<a href="index.html">Home Page</a>
+				</div>
+
+			</div>
+			
+			<div class="enhance1">
+				<h1>Enquiry Form Submission Confirmation</h1>
+				<p>
+					The website utilizes javascript's window.confirm in the use to make confirmation on information typed in enquiry form. The pop-up box 
+					shows the user's name, email and phone number for the user to do last checking.
+				</p><br/>
+				<label>Link: </label>
+				<div class="enhance_link">
+					<a href="enquiry.html">Enquiry Page</a>
+				</div>
+			</div>
+
+		</section>
+
+		<!--Footer-->
+		<footer>
+			<div class="footer_content">
+				<div class="footer_section about">
+					<a href="index.html"><img class="footer_logo" src="images/habor_logo.png" alt="Habor Resort Logo"/></a>
+					<h1>Our socials</h1>
+					<div class="contact">
+						<span><i class="fa fa-phone" aria-hidden="true"></i> &#160; +6012-3456789</span>
+						<span><i class="fa fa-envelope" aria-hidden="true"></i> &#160; <a href="mailto:101234677@students.swinburne.edu.my">101234677@students.swinburne.edu.my</a></span>
+					</div>
+					<div class="socials">
+						<a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				
+				<div class="footer_section links">
+					<h1>Quick Links</h1>
+					<ul>
+						<li><a href="roombooking.html">Room Details</a></li>
+						<li><a href="facilities.html">Facilities</a></li>
+						<li><a href="food.html">Food and Dining</a></li>
+						<li><a href="services.html">Services and Convenience</a></li>
+						<li><a href="enquiry.html">Enquiry</a></li>
+						<li><a href="Disclaimer.html">Disclaimer</a></li>
+						<li><a href="aboutme.html">About Me</a></li>
+						<li><a href="enhancement.html">Enhancement</a></li>
+					</ul>
+				</div>
+				
+				<div class="footer_section acknowledgement">
+					<h1>Acknowledgement</h1>
+					<p>Habor Resort would like to acknowledge the use of images from <br/><span class="strong">Sutera Habour Resort</span> and <span class="strong">Agoda</span>.</p>
+					</div>
+				
+			</div>
+			<div class="footer_bottom">
+				Est. 2021 | Copyright &#169; Habor Resort | Design by: Kelvin Ho Juin Ket
+			</div>
+			
+			
+		</footer>
+	
+	</body>
+</html>

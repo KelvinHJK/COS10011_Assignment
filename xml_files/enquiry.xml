@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="description" content="Habor Resort"/>
+		<meta name="author" content="Kelvin Ho"/>
+		<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="enhancement.css"/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<script src="javascript/script.js"></script>
+		<script src="javascript/enhancement.js"></script>
+		<title>Habor Resort</title>
+	</head>
+
+	<body>
+		<div class="logo">
+			<a href="index.html"><img src="images/habor_logo.png" alt="Habor Resort Logo"/></a>
+		</div>
+		
+		<div class="menu_bar">
+			<!--Navigation menu-->
+			<nav>
+				<ul class="main_menu"> 
+					<li class="active"><a href="index.html">Habor Resort</a>
+						<div class="sub_menu">
+							<ul>
+								<li><a href="roombooking.html"><i class="fa fa-bed" aria-hidden="true"></i>Room Details</a></li>
+								<li><a href="facilities.html"><i class="fa fa-gamepad" aria-hidden="true"></i>Facilities</a></li>
+								<li><a href="food.html"><i class="fa fa-cutlery" aria-hidden="true"></i>Food &amp; Dining</a></li>
+								<li><a href="services.html"><i class="fa fa-sliders" aria-hidden="true"></i>Services &amp; Convenience</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="enquiry.html">Enquiry</a></li>
+					<li><a href="disclaimer.html">Disclaimer</a></li>
+					<li><a href="aboutme.html">About me</a></li>
+					<li><a href="enhancement.html">Enhancement</a>
+                        <div class="sub_menu">
+							<ul>
+								<li><a href="enhancement.html">CSS Enhancement</a></li>
+								<li><a href="enhancementjs.html">JS Enhancement</a></li>
+							</ul>
+						</div>
+                    </li>
+					
+				</ul>
+			</nav>
+		</div>
+		
+		<header>
+			<h1>Enquiry</h1><hr/><br/>
+		</header>
+
+		<div class="enquiry">
+			<form class="enquiry_form" id="enqform" method="post" action="mailto:101234677@students.swinburne.edu.my" novalidate="novalidate" onsubmit="return transferData()">
+				<fieldset>
+					<legend>Personal details</legend><br/>
+					<label for="fname">First name:</label>
+					<input type="text" id="fname" name="fname" placeholder="Your first name" autocomplete="off" required="required" pattern="[A-Za-z]*" maxlength="25"/>*<br/><br/>
+					<label for="lname">Last name:</label>
+					<input type="text" id="lname" name="lname" placeholder="Your last name" autocomplete="off" required="required" pattern="[A-Za-z]*" maxlength="25"/>*<br/><br/>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" placeholder="example@email.com" autocomplete="off" required="required"/>*<br/><br/>
+				</fieldset>
+
+				<fieldset>
+					<legend>Address</legend><br/>
+					<label for="street">Street Address:</label>
+					<input type="text" id="street" name="street" maxlength="40" required="required"/>*<br/><br/>
+					<label for="city">City/Town:</label>
+					<input type="text" id="city" name="city" maxlength="20" required="required"/>*<br/><br/>
+
+					<label for="state">State:</label>
+						<select name="state" id="state" required="required">
+							<script>stateList()</script>
+							<!--<option value="none" selected="selected">Choose</option>
+							<option value="johor">Johor</option>
+							<option value="kedah">Kedah</option>
+							<option value="kelantan">Kelantan</option>
+							<option value="kualalumpur">Kuala Lumpur</option>
+							<option value="labuan">Labuan</option>
+							<option value="malacca">Malacca</option>
+							<option value="negerisembilan">Negeri Sembilan</option>
+							<option value="pahang">Pahang</option>
+							<option value="penang">Penang</option>
+							<option value="perak">Perak</option>
+							<option value="perlis">Perlis</option>
+							<option value="putrajaya">Putrajaya</option>
+							<option value="sabah">Sabah</option>
+							<option value="sarawak">Sarawak</option>
+							<option value="selangor">Selangor</option>
+							<option value="terengganu">Terengganu</option>
+							<option value="other">other</option>-->
+						</select>*<br/><br/>
+					
+					<label for="postcode">Postcode:</label>
+					<input type="text" id="postcode" name="postcode" pattern="[0-9]*" maxlength="5" placeholder="#####" required="required"/>*<br/><br/>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Enquiry</legend><br/>
+					<label for="phoneNo">Enter your phone number:</label>
+					<input type="tel" id="phoneNo" name="phoneNo" placeholder="0123456789" pattern="[0-9]*" maxlength="10" required="required"/>*<br/><br/>
+					
+					<label for="enquireabout">What are you looking for: </label>
+					<select name="service" id="enquireabout" onchange="change()">
+						<option value="none" selected="selected">Choose</option>
+						<optgroup label="Room Details">
+							<script>enqAboutRoomList()</script>
+							<!--<option value="Room Details - Deluxe Sea View Room">Room Details - Deluxe Sea View Room</option>
+							<option value="Room Details - Executive Suite">Room Details - Executive Suite</option>
+							<option value="Room Details - Family Room">Room Details - Family Room</option>
+							<option value="Room Details - Presidential Suite">Room Details - Presidential Suite</option>-->
+						</optgroup>
+
+						<optgroup label="Facilities">
+							<script>enqAboutFaciList()</script>
+							<!--<option value="Facilities - Fitness Centre">Facilities - Fitness Centre</option>
+							<option value="Facilities - Swimming Pools">Facilities - Swimming Pools</option>
+							<option value="Facilities - Private Beach and Water Activities">Facilities - Private Beach and Water Activities</option>
+							<option value="Facilities - Kids Club">Facilities - Kids Club</option>-->
+						</optgroup>
+
+						<optgroup label="Food and Dining">
+							<script>enqAboutFoodList()</script>
+							<!--<option value="Food and Dining - Al-Fresco">Food and Dining - Al-Fresco</option>
+							<option value="Food and Dining - Five Sails">Food and Dining - Five Sails</option>
+							<option value="Food and Dining - Tarik's Lobby Lounge">Food and Dining - Tarik's Lobby Lounge</option>
+							<option value="Food and Dining - Muffinz Deli Cafe">Food and Dining - Muffinz Deli Cafe</option>-->
+						</optgroup>
+
+						<optgroup label="Services and Convenience">
+							<script>enqAboutServicesList()</script>
+							<!--<option value="Services and Convenience - Cash withdrawal">Services and Convenience - Cash withdrawal</option>
+							<option value="Services and Convenience - Contactless Check-in/out">Services and Convenience - Contactless Check-in/out</option>
+							<option value="Services and Convenience - Currency Exchange">Services and Convenience - Currency Exchange</option>
+							<option value="Services and Convenience - Doorman">Services and Convenience - Doorman</option>
+							<option value="Services and Convenience - Fire place">Services and Convenience - Fire place</option>
+							<option value="Services and Convenience - 24 hours front desk">Services and Convenience - 24 hours front desk</option>
+							<option value="Services and Convenience - Gift/Souvenir shop">Services and Convenience - Gift/Souvenir shop</option>
+							<option value="Services and Convenience - Internet Access">Services and Convenience - Internet Access</option>
+							<option value="Services and Convenience - Laundry service">Services and Convenience - Laundry service</option>
+							<option value="Services and Convenience - Multilanguage">Services and Convenience - Multilanguage</option>
+							<option value="Services and Convenience - Taxi service">Services and Convenience - Taxi service</option>
+							<option value="Services and Convenience - Wheel Chair Accessible">Services and Convenience - Wheel Chair Accessible</option>-->
+						</optgroup>
+
+						<option value="Disclaimer">Disclaimer</option>
+						<option value="others">others</option>
+					</select><br/><br/>
+
+					<label for="subject" id="subjectLabel">Subject:</label>
+					<input type="text" name="subject" id="subject" size="50"/><br/><br/>
+
+					<label for="comments">Comments:</label><br/>
+					<textarea name="comments" id="comments" rows="5"></textarea><br/><br/>
+				</fieldset><br/>
+
+				<button class="btn1" type="submit" value="Submit">Submit</button>
+				<button class="btn2" type="reset" value="Reset">Reset</button>
+
+			</form>
+		</div>
+
+		
+		<!--Footer-->
+		<footer>
+			<div class="footer_content">
+				<div class="footer_section about">
+					<a href="index.html"><img class="footer_logo" src="images/habor_logo.png" alt="Habor Resort Logo"/></a>
+					<h1>Our socials</h1>
+					<div class="contact">
+						<span><i class="fa fa-phone" aria-hidden="true"></i> &#160; +6012-3456789</span>
+						<span><i class="fa fa-envelope" aria-hidden="true"></i> &#160; <a href="mailto:101234677@students.swinburne.edu.my">101234677@students.swinburne.edu.my</a></span>
+					</div>
+					<div class="socials">
+						<a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				
+				<div class="footer_section links">
+					<h1>Quick Links</h1>
+					<ul>
+						<li><a href="roombooking.html">Room Details</a></li>
+						<li><a href="facilities.html">Facilities</a></li>
+						<li><a href="food.html">Food and Dining</a></li>
+						<li><a href="services.html">Services and Convenience</a></li>
+						<li><a href="enquiry.html">Enquiry</a></li>
+						<li><a href="Disclaimer.html">Disclaimer</a></li>
+						<li><a href="aboutme.html">About Me</a></li>
+						<li><a href="enhancement.html">Enhancement</a></li>
+					</ul>
+				</div>
+				
+				<div class="footer_section acknowledgement">
+					<h1>Acknowledgement</h1>
+					<p>Habor Resort would like to acknowledge the use of images from <br/><span class="strong">Sutera Habour Resort</span> and <span class="strong">Agoda</span>.
+					</p>
+					</div>
+				
+			</div>
+			<div class="footer_bottom">
+				Est. 2021 | Copyright &#169; Habor Resort | Design by: Kelvin Ho Juin Ket
+			</div>
+			
+			
+		</footer>
+
+	</body>
+</html>

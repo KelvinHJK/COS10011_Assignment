@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="description" content="Habor Resort"/>
+		<meta name="author" content="Kelvin Ho"/>
+		<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="enhancement.css"/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<script src="javascript/script.js"></script>
+		<title>Habor Resort</title>
+	</head>
+
+	<body>
+		<div class="logo">
+			<a href="index.html"><img src="images/habor_logo.png" alt="Habor Resort Logo"/></a>
+		</div>
+		
+		<div class="menu_bar">
+			<!--Navigation menu-->
+			<nav>
+				<ul class="main_menu"> 
+					<li class="active"><a href="index.html">Habor Resort</a>
+						<div class="sub_menu">
+							<ul>
+								<li><a href="roombooking.html"><i class="fa fa-bed" aria-hidden="true"></i>Room Details</a></li>
+								<li><a href="facilities.html"><i class="fa fa-gamepad" aria-hidden="true"></i>Facilities</a></li>
+								<li><a href="food.html"><i class="fa fa-cutlery" aria-hidden="true"></i>Food &amp; Dining</a></li>
+								<li><a href="services.html"><i class="fa fa-sliders" aria-hidden="true"></i>Services &amp; Convenience</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="enquiry.html">Enquiry</a></li>
+					<li><a href="disclaimer.html">Disclaimer</a></li>
+					<li><a href="aboutme.html">About me</a></li>
+					<li><a href="enhancement.html">Enhancement</a>
+                        <div class="sub_menu">
+							<ul>
+								<li><a href="enhancement.html">CSS Enhancement</a></li>
+								<li><a href="enhancementjs.html">JS Enhancement</a></li>
+							</ul>
+						</div>
+                    </li>
+					
+				</ul>
+			</nav>
+		</div>
+
+		<header>
+			<img src="images/services.png" alt="Resort view"/>
+			<h1>Services and Conveniences</h1><hr/>
+		</header>
+		
+		<section class="products">
+			<div class="products_content">
+				<table class="services_table">
+					<caption>Press any box above to enquire now</caption>
+					
+					<tr>
+						<td class="table_left">
+							<a onclick="storeitem('Services and Convenience - Cash withdrawal', '13')">
+								<h3>Cash withdrawal <i class="fa fa-credit-card" aria-hidden="true"></i></h3>
+								<p>Cash withdrawn at the ATM machine</p>
+							</a>
+						</td>
+						<td>
+							<a onclick="storeitem('Services and Convenience - Contactless Check-in/out', '14')">
+								<h3><i class="fa fa-check-square-o" aria-hidden="true"></i> Contactless Check-in/out</h3>
+								<p>Check in/out with our website online</p>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="table_left">
+							<a onclick="storeitem('Services and Convenience - Currency Exchange', '15')">
+								<h3>Currency Exchange <i class="fa fa-usd" aria-hidden="true"></i></h3>
+								<p>Currency Exchange from any dollar</p>
+							</a>
+						</td>
+						<td>
+							<a onclick="storeitem('Services and Convenience - Doorman', '16')">
+								<h3><i class="fa fa-male" aria-hidden="true"></i> Doorman</h3>
+								<p>Doorman/Security 24-hours</p>
+							</a>
+						</td>
+
+					</tr>
+					<tr>
+						<td class="table_left">
+							<a onclick="storeitem('Services and Convenience - Fire place', '17')">
+								<h3>Fire place <i class="fa fa-free-code-camp" aria-hidden="true"></i></h3>
+								<p>Modern fireplaces vary in heat efficiency</p>
+							</a>
+						</td>
+						<td>
+							<a onclick="storeitem('Services and Convenience - 24 hours front desk', '18')">
+								<h3><i class="fa fa-handshake-o" aria-hidden="true"></i> 24 hours front desk</h3>
+								<p>24-hours front desk online for you</p>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="table_left">
+							<a onclick="storeitem('Services and Convenience - Gift/Souvenir shop', '19')">
+								<h3>Gift/Souvenir shop <i class="fa fa-gift" aria-hidden="true"></i></h3>
+								<p>Meant to be a reminder of coming Sabah</p>
+							</a>
+						</td>
+						<td>
+							<a onclick="storeitem('Services and Convenience - Internet Access', '20')">
+								<h3><i class="fa fa-wifi" aria-hidden="true"></i> Internet Access</h3>
+								<p>Internet access throughout the Resort</p>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="table_left">
+							<a onclick="storeitem('Services and Convenience - Laundry service', '21')">
+								<h3>Laundry service <img src="images/laundry.png" alt="Laundry icon"/></h3>
+								<p>Laundry/Dry Cleaning services provided</p>
+							</a>
+						</td>
+						<td>
+							<a onclick="storeitem('Services and Convenience - Multilanguage', '22')">
+								<h3><i class="fa fa-language" aria-hidden="true"></i> Multilanguage</h3>
+								<p>Come with any language</p>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="table_left">
+							<a onclick="storeitem('Services and Convenience - Taxi service', '23')">
+								<h3>Taxi service <i class="fa fa-taxi" aria-hidden="true"></i></h3>
+								<p>Taxi/Grab easily accessed</p>
+							</a>
+						</td>
+						<td>
+							<a onclick="storeitem('Services and Convenience - Wheel Chair Accessible', '24')">
+								<h3><i class="fa fa-wheelchair" aria-hidden="true"></i> Wheel Chair Accessible</h3>
+								<p>Facilities for disabled people</p>
+							</a>
+						</td>
+					</tr>
+				</table>
+			</div>		
+		</section>
+
+		<!--Footer-->
+		<footer>
+			<div class="footer_content">
+				<div class="footer_section about">
+					<a href="index.html"><img class="footer_logo" src="images/habor_logo.png" alt="Habor Resort Logo"/></a>
+					<h1>Our socials</h1>
+					<div class="contact">
+						<span><i class="fa fa-phone" aria-hidden="true"></i> &#160; +6012-3456789</span>
+						<span><i class="fa fa-envelope" aria-hidden="true"></i> &#160; <a href="mailto:101234677@students.swinburne.edu.my">101234677@students.swinburne.edu.my</a></span>
+					</div>
+					<div class="socials">
+						<a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				
+				<div class="footer_section links">
+					<h1>Quick Links</h1>
+					<ul>
+						<li><a href="roombooking.html">Room Details</a></li>
+						<li><a href="facilities.html">Facilities</a></li>
+						<li><a href="food.html">Food and Dining</a></li>
+						<li><a href="services.html">Services and Convenience</a></li>
+						<li><a href="enquiry.html">Enquiry</a></li>
+						<li><a href="Disclaimer.html">Disclaimer</a></li>
+						<li><a href="aboutme.html">About Me</a></li>
+						<li><a href="enhancement.html">Enhancement</a></li>
+					</ul>
+				</div>
+				
+				<div class="footer_section acknowledgement">
+					<h1>Acknowledgement</h1>
+					<p>Habor Resort would like to acknowledge the use of images from <br/><span class="strong">Sutera Habour Resort</span> and <span class="strong">Agoda</span>.</p>
+					</div>
+				
+			</div>
+			<div class="footer_bottom">
+				Est. 2021 | Copyright &#169; Habor Resort | Design by: Kelvin Ho Juin Ket
+			</div>
+			
+			
+		</footer>
+
+	</body>
+</html>
